@@ -1,11 +1,5 @@
 data Fraction = Fraction { num :: Int, denom :: Int }
 
-numer :: Fraction -> Int
-numer (Fraction a _) = a
-
-deno :: Fraction -> Int
-deno (Fraction _ b) = b
-
 instance Show Fraction where
   show (Fraction a b) = (show a) ++ "/" ++ (show b)
 
